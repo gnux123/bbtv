@@ -179,7 +179,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '.tmp/css/',
                     src: '{,*/}*.css',
-                    dest: '.tmp/css/'
+                    dest: '<%= yeoman.app %>/css/'
                 }]
             }
         },
