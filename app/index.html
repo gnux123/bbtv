@@ -186,9 +186,9 @@
                 $(".upBtn").click(function(){
                     _count--;
                     if(_count < 0){
-                        _count = 0;
-                        $("#pageSlide").css("-webkit-transform","translate3d(0,0,0)");
-                        $(".navsPage").text("1/"+_pageNums);
+                        _count = _pageNums;
+                        $("#pageSlide").css("-webkit-transform","translate3d(0,"+((520*(_pageNums-1))*-1)+"px,0)");
+                        $(".navsPage").text("5/"+_pageNums);
                     }else{
                         $("#pageSlide").css("-webkit-transform","translate3d(0,"+((520*_count)*-1)+"px,0)");
                         $(".navsPage").text((_count+1)+"/"+_pageNums);                        
