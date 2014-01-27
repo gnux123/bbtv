@@ -1,0 +1,435 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000310}}
+* {
+  font-family: arial;
+}
+
+@media (min-width: 935px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000315}}
+  .container {
+    position: relative;
+    max-width: 1310px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 720px;
+    background: url(./../images/bg.jpg) center no-repeat;
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000325}}
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 384px;
+    height: 107px;
+    background: url(./../images/logo.png) center no-repeat;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000334}}
+  .marquee {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 935px;
+    height: 76px;
+    background: url(./../images/marquee_bg.png) center no-repeat;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000343}}
+  .leftPanel {
+    position: absolute;
+    top: 117px;
+    left: 0;
+    width: 372px;
+    height: 549px;
+    background: url(./../images/leftPanel_bg.png) no-repeat;
+    overflow: hidden;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000353}}
+  .leftPanel_navs {
+    position: absolute;
+    top: 670px;
+    left: 150px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000359}}
+  .prodContent {
+    position: relative;
+    margin: 11px 0 0 70px;
+    width: 270px;
+    height: 520px;
+    overflow: hidden;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000367}}
+  #pageSlide {
+    position: absolute;
+    width: 270px;
+    height: 10000em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000373}}
+  .rightVcr {
+    position: absolute;
+    top: 117px;
+    left: 382px;
+    width: 837px;
+    height: 478px;
+    background: url(./../images/right_bg.png) no-repeat;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000382}}
+  .vcrPanel {
+    position: absolute;
+    top: 65px;
+    left: 382px;
+    width: 846px;
+    height: 52px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000390}}
+  .vcrContent, .vcrContent > div {
+    width: 778px;
+    height: 435px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\0000395}}
+  .vcrContent {
+    position: relative;
+    margin: 12px 0 12px 23.5px;
+    overflow: hidden;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\00003100}}
+  .vcrContent > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #cccccc;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\00003107}}
+  .btnZone {
+    position: absolute;
+    left: 382px;
+    top: 595px;
+    width: 837px;
+    height: 36px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_config\.scss}line{font-family:\00003115}}
+  .btnZone > .phone {
+    position: relative;
+    right: -150px;
+  }
+}
+@media (min-width: 935px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\000032}}
+  .vcrPanel > ul > li {
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\000034}}
+  .vcrPanel > ul > li a {
+    display: block;
+    width: 165px;
+    height: 0;
+    padding-top: 52px;
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000311}}
+  .vcrPanel > ul > li a.tab1 {
+    background: url(./../images/tabs/tvPanel_tabs_01.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000312}}
+  .vcrPanel > ul > li a.tab2 {
+    background: url(./../images/tabs/tvPanel_tabs_02.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000313}}
+  .vcrPanel > ul > li a.tab3 {
+    background: url(./../images/tabs/tvPanel_tabs_03.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000314}}
+  .vcrPanel > ul > li a.tab4 {
+    background: url(./../images/tabs/tvPanel_tabs_04.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000315}}
+  .vcrPanel > ul > li a.tab5 {
+    background: url(./../images/tabs/tvPanel_tabs_05.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000317}}
+  .vcrPanel > ul > li a.tab1:focus {
+    background: url(./../images/tabs/tvPanel_tabs_active_01.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000318}}
+  .vcrPanel > ul > li a.tab2:focus {
+    background: url(./../images/tabs/tvPanel_tabs_active_02.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000319}}
+  .vcrPanel > ul > li a.tab3:focus {
+    background: url(./../images/tabs/tvPanel_tabs_active_03.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000320}}
+  .vcrPanel > ul > li a.tab4:focus {
+    background: url(./../images/tabs/tvPanel_tabs_active_04.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000321}}
+  .vcrPanel > ul > li a.tab5:focus {
+    background: url(./../images/tabs/tvPanel_tabs_active_05.png) no-repeat;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000327}}
+  .leftPanel_navs > ul > li {
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000329}}
+  .leftPanel_navs > ul > li a.upBtn, .leftPanel_navs > ul > li a.downBtn {
+    display: block;
+    width: 36px;
+    height: 0;
+    padding-top: 36px;
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000337}}
+  .leftPanel_navs > ul > li a.upBtn {
+    background: url(./../images/icons/icon_upBtn.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000338}}
+  .leftPanel_navs > ul > li a.downBtn {
+    background: url(./../images/icons/icon_downBtn.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000340}}
+  .leftPanel_navs > ul > li div.navsPage {
+    margin-right: 5px;
+    display: block;
+    width: 54px;
+    height: 23px;
+    background: url(./../images/navsPage_bg.png) no-repeat;
+    text-align: center;
+    line-height: 23px;
+    color: #ffffff;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000353}}
+  .prodContent > div > div > ul > li {
+    display: block;
+    width: 270px;
+    height: 165px;
+    background: #333;
+    margin-top: 12.5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000359}}
+  .prodContent > div > div > ul > li:first-child {
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000363}}
+  .btnZone > ul > li {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000369}}
+  .btnZone > ul > li > a {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000379}}
+  .btnZone > ul > li > a:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    content: "";
+    height: 36px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000388}}
+  .btnZone > ul > li > a.order {
+    padding-left: 40px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000390}}
+  .btnZone > ul > li > a.order:before {
+    width: 36px;
+    background: url(./../images/icons/icon_redBtn.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000396}}
+  .btnZone > ul > li > a.home {
+    padding-left: 58px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\0000398}}
+  .btnZone > ul > li > a.home:before {
+    width: 54px;
+    background: url(./../images/icons/icon_homeBtn.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003104}}
+  .btnZone > ul > li > a.ok {
+    padding-left: 40px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003106}}
+  .btnZone > ul > li > a.ok:before {
+    width: 36px;
+    background: url(./../images/icons/icon_okBtn.png) no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003112}}
+  .btnZone > ul > li > a.back {
+    padding-left: 40px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003114}}
+  .btnZone > ul > li > a.back:before {
+    width: 36px;
+    background: url(./../images/icons/icon_backBtn.png) no-repeat;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003122}}
+  .prod {
+    display: block;
+    width: 270px;
+    height: 165px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003128}}
+  .prod .pordImg {
+    display: block;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003135}}
+  .prod .prodDesc {
+    margin-top: -2px;
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+    background: #bfbfbf;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003142}}
+  .prod .prodDesc > span {
+    display: block;
+    color: #000000;
+    padding: 0 5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003147}}
+  .prod .prodDesc > span.name {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/2\.0\.0\/gems\/susy-1\.0\.9\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
+  .prod .prodDesc > span.name * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003157}}
+  .prod .prodDesc > span.price {
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    font-size: 1.3rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003170}}
+  .marqueeSlide {
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    overflow: hidden;
+    margin: 10px 0 0 50px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vincentsue\/Desktop\/bbtv\/app\/sass\/_tabs\.scss}line{font-family:\00003179}}
+  .marqueeSlide.marqueeContent {
+    overflow-x: -webkit-marquee;
+    -webkit-marquee-direction: backwards;
+    -webkit-marquee-style: scroll;
+    -webkit-marquee-speed: fast;
+    -webkit-marquee-increment: small;
+    -webkit-marquee-repetition: infinite;
+  }
+}

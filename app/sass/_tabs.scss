@@ -1,0 +1,187 @@
+@include at-breakpoint($desktop) {
+	.vcrPanel > ul > li {
+		float: left;
+		a {
+			display: block;
+			width:165px;
+			height:0;
+			padding-top: 52px;
+			overflow: hidden;
+
+			&.tab1 { background: url(#{$path}/tabs/tvPanel_tabs_01.png) no-repeat; }
+			&.tab2 { background: url(#{$path}/tabs/tvPanel_tabs_02.png) no-repeat; }
+			&.tab3 { background: url(#{$path}/tabs/tvPanel_tabs_03.png) no-repeat; }
+			&.tab4 { background: url(#{$path}/tabs/tvPanel_tabs_04.png) no-repeat; }
+			&.tab5 { background: url(#{$path}/tabs/tvPanel_tabs_05.png) no-repeat; }
+
+			&.tab1:focus { background: url(#{$path}/tabs/tvPanel_tabs_active_01.png) no-repeat; }
+			&.tab2:focus { background: url(#{$path}/tabs/tvPanel_tabs_active_02.png) no-repeat; }
+			&.tab3:focus { background: url(#{$path}/tabs/tvPanel_tabs_active_03.png) no-repeat; }
+			&.tab4:focus { background: url(#{$path}/tabs/tvPanel_tabs_active_04.png) no-repeat; }
+			&.tab5:focus { background: url(#{$path}/tabs/tvPanel_tabs_active_05.png) no-repeat; }
+
+		}
+	}
+
+	.leftPanel_navs {
+		& > ul > li {
+			float:left;
+			a.upBtn, a.downBtn {
+				display: block;
+				width:36px;
+				height:0;
+				padding-top: 36px;
+				overflow: hidden;
+			}
+
+			a.upBtn { background: url(#{$path}/icons/icon_upBtn.png) no-repeat; }
+			a.downBtn { background: url(#{$path}/icons/icon_downBtn.png) no-repeat; }
+
+			div.navsPage {
+				margin-right:5px;
+				display: block;
+				width:54px;
+				height:23px;
+				background:url(#{$path}/navsPage_bg.png) no-repeat;
+				text-align: center;
+				line-height: 23px;
+				color:#ffffff;
+			}
+		}
+	}
+
+	.prodContent > div > div > ul > li {
+		display: block;
+		width:270px;
+		height:165px;
+		background: #333;
+		margin-top:12.5px;
+		&:first-child { margin-top:0; }
+	}
+
+
+	.btnZone > ul > li {
+		display: inline-block;
+		float:left;
+		margin-left:5px;
+	}
+
+	.btnZone > ul > li > a {
+		position: relative;
+		display: inline-block;
+		height:36px;
+		line-height: 36px;
+		color:#ffffff;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-shadow:3px 3px rgba(0,0,0,.5);
+
+		&:before {
+			position: absolute;
+			left:0;
+			top:0;
+			display: block;
+			content:"";
+			height:36px;
+		}
+
+		&.order {
+			padding-left:40px;
+			&:before {
+				width:36px;
+				background: url(#{$path}/icons/icon_redBtn.png) no-repeat;
+			}
+		}
+
+		&.home {
+			padding-left:58px;
+			&:before {
+				width:54px;
+				background: url(#{$path}/icons/icon_homeBtn.png) no-repeat;
+			}			
+		}
+
+		&.ok {
+			padding-left:40px;
+			&:before {
+				width:36px;
+				background: url(#{$path}/icons/icon_okBtn.png) no-repeat;
+			}			
+		}
+
+		&.back {
+			padding-left:40px;
+			&:before {
+				width:36px;
+				background: url(#{$path}/icons/icon_backBtn.png) no-repeat;
+			}			
+		}
+	}
+
+	//prod_module
+	.prod {
+		display: block;
+		width:270px;
+		height:165px;
+		overflow: hidden;
+		text-decoration: none;
+		.pordImg {
+			display: block;
+			width:100%;
+			height:110px;
+			overflow: hidden;
+		}
+
+		.prodDesc {
+			margin-top: -2px;
+			width:100%;
+			height:55px;
+			overflow: hidden;
+			background: #bfbfbf;
+
+			& > span {
+				display: block;
+				color:#000000;
+			    padding:0 5px;
+			
+				&.name {
+					width:100%;
+					height:20px;
+					line-height: 20px;
+				    overflow:hidden; 
+				    white-space:nowrap; 
+				    text-overflow:ellipsis; 
+				    @include border-box-sizing;
+				}
+
+				&.price {
+					height:35px;
+					line-height: 35px;
+					text-align: right;
+					font-size:1.3rem;
+				}
+			}
+			
+		}
+		
+	}
+
+
+	.marqueeSlide {
+		width:800px;
+		height:50px;
+		line-height: 50px;
+		font-size:1.5rem;
+		color:#ffffff;
+		overflow: hidden;
+		margin:10px 0 0 50px;
+	}
+	.marqueeSlide.marqueeContent {   
+overflow-x:-webkit-marquee;
+-webkit-marquee-direction: backwards;
+-webkit-marquee-style: scroll;
+-webkit-marquee-speed: fast;
+-webkit-marquee-increment: small;
+-webkit-marquee-repetition: infinite;	
+	}
+}

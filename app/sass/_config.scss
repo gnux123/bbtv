@@ -1,0 +1,120 @@
+//susy
+$desktop: 935px 8;
+//$mobile:320px 4 480px;
+
+$total-columns    : 8; //格線內的總欄數
+$column-width     : 155px; //5個字
+$gutter-width     : 10px; //欄間距
+$grid-padding     : 0px;//1em 至左及至右滿版兩邊間距
+
+*{
+	font-family: arial;
+}
+
+@include at-breakpoint($desktop) { 
+	.container {
+		position: relative;
+		@include container;
+		//@include susy-grid-background;
+		//width:1280px;
+		height: 720px;
+		background: url(#{$path}/bg.jpg) center no-repeat;
+		overflow: hidden;
+	}
+
+	.logo {
+		position: absolute;
+		left:0;
+		top:0;
+		width:384px;
+		height:107px;
+		background: url(#{$path}/logo.png) center no-repeat;
+	}
+
+	.marquee {
+		position: absolute;
+		bottom:0;
+		right:0;
+		width:935px;
+		height:76px;
+		background: url(#{$path}/marquee_bg.png) center no-repeat;
+	}
+
+	.leftPanel {
+		position: absolute;
+		top:117px;
+		left:0;
+		width:372px;
+		height: 549px;
+		background: url(#{$path}/leftPanel_bg.png) no-repeat;
+		overflow: hidden;
+	}
+
+	.leftPanel_navs {
+		position: absolute;
+		top:670px;
+		left:150px;
+	}
+
+	.prodContent {
+		position: relative;
+		margin:11px 0 0 70px;
+		width:270px;
+		height:520px;
+		overflow: hidden;
+	}
+
+	#pageSlide {
+		position: absolute;
+		width:270px;
+		height:10000em;
+	}
+
+	.rightVcr {
+		position: absolute;
+		top:117px;
+		left:382px;
+		width:837px;
+		height:478px;
+		background: url(#{$path}/right_bg.png) no-repeat;
+	}
+
+	.vcrPanel {
+		position: absolute;
+		top:65px;
+		left:382px;
+		width:846px;
+		height:52px;
+	}
+
+	.vcrContent, .vcrContent > div {
+		width:778px;
+		height:435px;
+	}
+
+	.vcrContent {
+		position: relative;
+		margin:12px 0 12px 23.5px;
+		overflow: hidden;
+	}
+	.vcrContent > div {
+		position: absolute;
+		left:0;
+		top:0;
+		background: #cccccc;
+	}
+
+	.btnZone {
+		position: absolute;
+		left:382px;
+		top:595px;
+		width:837px;
+		height:36px;
+	}
+
+	.btnZone > .phone {
+		position: relative;
+		right:-150px;
+	}
+	
+}
