@@ -1,0 +1,67 @@
+@include at-breakpoint($desktop) {
+	.leftPanel.prod_detail > .prod_content {
+		position: relative;
+		left:auto;
+		right:-110px;
+		top:30px;
+		width:665px;
+		height:275px;
+		background: #ffffff;
+		box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		overflow: hidden;
+	}
+
+	.prodNums {
+		display: block;
+		width:100%;
+		height:40px;
+		line-height: 40px;
+		background:#9e9e9e;
+		color:#ffffff;
+		font-size:$font-s#{rem};
+		@include border-box-sizing;
+		padding:0 15px;
+	}
+
+	.prodName {
+		margin-top: 10px;
+		display: block;
+		width:100%;
+		height:80px;
+		line-height: 40px;
+		overflow:hidden;
+		font-size:$font-s+0.1#{rem};
+		color:#666666;
+		padding:0 15px;
+
+	}
+
+	a.orderCheck_btn {
+		position:absolute;
+		right:20px;
+		bottom:80px;
+		width:306px;
+		height:0px;
+		padding-top:159px;
+		overflow: hidden;
+		background: url(#{$path}/orderCheck_btn.png) no-repeat;
+	}
+
+	.prodSelect {
+		position:absolute;
+		z-index:1;
+		& > select {
+			display: block;
+			width:600px;
+			height:50px;
+			font-size:$font-s#{rem};
+			border:1px solid #cccccc;
+			border-radius:0;
+
+			option { 
+				height:50px;
+				line-height: 50px;
+			}
+		}
+	}
+}

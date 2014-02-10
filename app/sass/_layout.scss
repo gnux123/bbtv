@@ -1,0 +1,152 @@
+@include at-breakpoint($desktop) { 
+	.container {
+		position: relative;
+		@include container;
+		//@include susy-grid-background;
+		//width:1280px;
+		height: 720px;
+		background: url(#{$path}/bg.jpg) center no-repeat;
+		overflow: hidden;
+	}
+
+	.logo {
+		position: absolute;
+		left:0;
+		top:0;
+		width:384px;
+		height:107px;
+		background: url(#{$path}/logo.png) center no-repeat;
+	}
+
+	.marquee {
+		position: absolute;
+		bottom:0;
+		right:0;
+		width:935px;
+		height:76px;
+		background: url(#{$path}/marquee_bg.png) center no-repeat;
+	}
+
+	.leftPanel {
+		position: absolute;
+		top:117px;
+		left:0;
+		width:372px;
+		height: 549px;
+		background: url(#{$path}/leftPanel_bg.png) no-repeat;
+		overflow: hidden;
+		
+		&.prod_detail {
+			width:817px;
+			height: 349px;			
+			background: url(#{$path}/prod_left_bg.png) no-repeat;
+		}
+	}
+
+	.leftPanel_navs {
+		position: absolute;
+		top:670px;
+		left:150px;
+	}
+
+	.prodContent {
+		position: relative;
+		margin:11px 0 0 70px;
+		width:270px;
+		height:520px;
+		overflow: hidden;
+	}
+
+	#pageSlide {
+		position: absolute;
+		width:270px;
+		height:10000em;
+	}
+
+	.rightVcr {
+		position: absolute;
+		top:117px;
+		left:382px;
+		width:837px;
+		height:478px;
+		background: url(#{$path}/right_bg.png) no-repeat;
+	}
+
+	.vcrPanel {
+		position: absolute;
+		top:65px;
+		left:382px;
+		width:846px;
+		height:52px;
+	}
+
+	.vcrContent, .vcrContent > div {
+		width:778px;
+		height:435px;
+	}
+
+	.vcrContent {
+		position: relative;
+		margin:12px 0 12px 23.5px;
+		overflow: hidden;
+	}
+	.vcrContent > div {
+		position: absolute;
+		left:0;
+		top:0;
+		background: #cccccc;
+	}
+
+	.btnZone {
+		position: absolute;
+		left:382px;
+		top:595px;
+		width:837px;
+		height:36px;
+	
+		&.prod_pos {
+			z-index: 1;
+			left:auto;
+			top:auto;
+			right:10px;
+			bottom:10px;
+		}
+	}
+
+	.btnZone > .phone {
+		position: relative;
+		right:-70px;
+	}
+
+
+	//prodLayout
+	.prod_bg_down {
+		position:absolute;
+		z-index: 0;
+		right:0;
+		bottom:0;
+		width:449px;
+		height:505px;
+		background:url(#{$path}/bg_shadow.png) no-repeat;
+	}
+
+
+	.rightPanel.prod_pic {
+		position: absolute;
+		top:117px;
+		right:0;
+		width:405px;
+		height:364px;
+		overflow: hidden;
+		background: url(#{$path}/right_prod_pic.png) no-repeat;
+
+		& > img {
+			position:relative;
+			width:365px;
+			height:310px;
+			top:35px;
+			left:11px;
+		}
+	}
+	
+}
