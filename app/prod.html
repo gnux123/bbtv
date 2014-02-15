@@ -36,17 +36,46 @@
                 <div class="prod_content">
                     <h3 class="prodNums">品號：12345678</h3>
                     <span class="prodName">【日式】陶瓷健具塔吉鍋X2入組-(19cm+22cm)</span>
-                    <span class="prodPrice"></span>
+                    <span class="prodPrice">
+                        東森價：<span class="priceNums">$1,680</span>元<span class="priceLimit">(限貨到付款)</span>
+                    </span>
                 </div>
             </div>
             <div class="prodSelect">
-                <select name="" id="">
-                    <option value="">第一組</option>
+                <select name="" id="" class="address">
+                    <option value="">新北市中和區景平路258號5樓</option>
+                    <option value="">台北市南港區忠孝東路六段458號9樓</option>
+                    <option value="">台北市南港區昆陽街95-1號6樓</option>
+                    <option value="">台北市南港區重陽路72號</option>
+                </select>
+                <select name="" id="" class="spec1">
+                    <option value="">黃色</option>
+                    <option value="">紅色</option>
+                    <option value="">藍色</option>
+                </select>
+                <select name="" id="" class="spec2">
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                </select>
+                <select name="" id="" class="spec3">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
                 </select>
             </div>
             <a class="orderCheck_btn" href="javascript:void(0);" tabIndex="4">確認送出</a>
             <div class="rightPanel prod_pic">
                 <img src="http://img2.u-mall.com.tw/UserFiles/Product/00476/00476406/8860600a-2c05-4809-84f2-28c0f25eef06.jpg" alt="">
+            </div>
+            <div class="popup">
+                <p>請洽專線<br/>
+                    <span class="servicePhone">0800-070-799</span><br/>
+                    商品品號：12345678
+                </p>
+                <a href="prod_end.html" tabIndex="10">OK</a>
             </div>
         </div>
 
@@ -66,6 +95,46 @@
         <!-- endbuild -->
         <script>
             $(function(){
+                $.fn.selectDrop = function (obj) {
+                    var Selects = $(this),
+                        $class = Selects.attr("class");
+                    Selects.hide();
+                    Selects.wrap("<div class='optionGroup "+$class+"' />").after("<div class='inputbox'><span class='text'></span><a class='downBtn' href='javascript:void(0);' tabIndex="+obj+">down</a></div>");
+
+                    var $input_selectBox = Selects.parent().find("div.inputbox");
+                    var $down = Selects.parent().find("a.downBtn");
+                    var opt = $('option', Selects);
+                    var opt_num = opt.length;
+                    var i = 0;
+                    $input_selectBox.find("span.text").text($(opt[0]).text());
+                    $down.click(function(){
+                        i = i+1;
+                        if (i < opt_num) {
+                            $input_selectBox.find('span.text').text($(opt[i]).text());
+                            Selects.find("option").removeAttr("Selected");
+                            Selects.find("option").eq(i).attr("Selected", "");
+                        }else{
+                            i = 0;
+                            $input_selectBox.find("span.text").text($(opt[0]).text());
+                            Selects.find("option").removeAttr("Selected");
+                            Selects.find("option").eq(0).attr("Selected", "");
+                        }
+                    }).focus(function(){
+                        $(this).parents("div."+$class).addClass("selectCurrent").siblings(".selectCurrent").removeClass("selectCurrent");
+                    }).blur(function(){
+                        $(this).parents("div."+$class).removeClass("selectCurrent");
+                    })
+                };
+
+                $(".prodSelect select").each(function(){
+                    var _index = $(this).index() + 1;
+                    $(this).selectDrop(_index);
+                });
+
+                $(".popup").hide();
+                $(".orderCheck_btn").click(function(){
+                    $(".popup").show();
+                });
 
             });
         </script>

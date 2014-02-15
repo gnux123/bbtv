@@ -35,10 +35,62 @@
 		padding:0 15px;
 
 	}
+	
+	.prodPrice {
+		position: absolute;
+		bottom:0;
+		left:0;
+		display: block;
+		width:100%;
+		height:90px;
+		line-height: 90px;
+		overflow: hidden;
+		font-size:$font-s+1#{rem};
+		padding:0 15px;
+		color:#a12422;
+
+		span.priceLimit {
+			color:#666666;
+			font-size:$font-s - 0.5#{rem};
+		}		
+	}
+
+	//end
+	.prodOrderEnd {
+		position:absolute;
+		z-index:1;
+		bottom:80px;
+		left:80px;
+		width:1122px;
+		height:164px;
+		background: url(#{$path}/orderTips_bg.png) no-repeat;		
+	}
+
+	.prodOrderEnd > p {
+		position: relative;
+		top:20px;
+		margin:0 20px;
+		width:1080px;
+		font-size:$font-s+0.3#{rem};
+		letter-spacing: 0.45rem;
+		line-height: 60px;
+
+		& > span {
+			color:#550000;
+			font-size:$font-s+1#{rem};
+		}
+	}
+
+	.prodOrderEnd > span.tips {
+		position: absolute;
+		bottom:20px;
+		right:40px;
+		font-size:$font-s - 0.6#{rem};
+	}
 
 	a.orderCheck_btn {
 		position:absolute;
-		right:20px;
+		right:75px;
 		bottom:80px;
 		width:306px;
 		height:0px;
@@ -47,21 +99,20 @@
 		background: url(#{$path}/orderCheck_btn.png) no-repeat;
 	}
 
-	.prodSelect {
-		position:absolute;
-		z-index:1;
-		& > select {
-			display: block;
-			width:600px;
-			height:50px;
-			font-size:$font-s#{rem};
-			border:1px solid #cccccc;
-			border-radius:0;
-
-			option { 
-				height:50px;
-				line-height: 50px;
-			}
-		}
+	.spec1, .spec2, .spec3 { 
+		float:left; 
+		margin-top:25px;
+	}
+	.spec1 {
+		width:274px;
+		border-right:0;
+		span.text { width:208px; }
+	}
+	.spec2 { border-right:0; }
+	.spec2, .spec3 {
+		border-top-left-radius: 0;
+		border-left:0;
+		width:273px;
+		span.text { width:207px; }
 	}
 }

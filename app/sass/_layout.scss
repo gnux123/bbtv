@@ -108,7 +108,7 @@
 			z-index: 1;
 			left:auto;
 			top:auto;
-			right:10px;
+			right:60px;
 			bottom:10px;
 		}
 	}
@@ -133,8 +133,8 @@
 
 	.rightPanel.prod_pic {
 		position: absolute;
-		top:117px;
-		right:0;
+		top:94px;
+		right:55px;
 		width:405px;
 		height:364px;
 		overflow: hidden;
@@ -147,6 +147,13 @@
 			top:35px;
 			left:11px;
 		}
+	}
+
+	.prodSelect {
+		position:absolute;
+		z-index:1;
+		bottom:80px;
+		left:60px;
 	}
 	
 }
