@@ -150,6 +150,25 @@
                     <div>5</div>
                 </div>
             </div>
+
+            <div class="popup adultPop">
+                <p><span>欲瀏覽成人商品</span><br/>
+                    請輸入驗證碼
+                </p>
+                <div class="InputNums adultCode errorCode">
+                    <input type="text" value="3">
+                    <input type="text" value="5">
+                    <input type="text" value="7">
+                    <input type="text" value="9">
+                </div>
+                <div class="popBtns">
+                    <ul>
+                        <li><a class="back" href="javascript:void(0);">回上頁</a></li>
+                        <li><a class="ok" href="javascript:void(0);">確認</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
 
@@ -168,12 +187,16 @@
         <!-- endbuild -->
         <script>
             $(function(){
+                $(".popup").hide();
                 $(".vcrContent > div").hide();
                 $(".vcrContent > div").eq(0).show();
                 $(".vcrPanel > ul > li:eq(0) > a").focus();
                 $(".vcrPanel > ul > li").each(function(){
                     $(this).children("a").focus(function(){
                         var _index = $(this).parent().index();
+                        if(_index == 4){
+                            $(".popup").show();
+                        }
                         $(".vcrContent > div").eq(_index).fadeIn().siblings().fadeOut();
                     });
                 });

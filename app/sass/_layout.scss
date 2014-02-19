@@ -12,7 +12,7 @@
 	.logo {
 		position: absolute;
 		left:0;
-		top:0;
+		top:-20px;
 		width:384px;
 		height:107px;
 		background: url(#{$path}/logo.png) center no-repeat;
@@ -20,7 +20,7 @@
 
 	.marquee {
 		position: absolute;
-		bottom:0;
+		bottom:20px;
 		right:0;
 		width:935px;
 		height:76px;
@@ -29,8 +29,8 @@
 
 	.leftPanel {
 		position: absolute;
-		top:117px;
-		left:0;
+		top:97px;
+		left:20px;
 		width:372px;
 		height: 549px;
 		background: url(#{$path}/leftPanel_bg.png) no-repeat;
@@ -45,7 +45,7 @@
 
 	.leftPanel_navs {
 		position: absolute;
-		top:670px;
+		top:650px;
 		left:150px;
 	}
 
@@ -65,8 +65,8 @@
 
 	.rightVcr {
 		position: absolute;
-		top:117px;
-		left:382px;
+		top:97px;
+		left:402px;
 		width:837px;
 		height:478px;
 		background: url(#{$path}/right_bg.png) no-repeat;
@@ -74,8 +74,8 @@
 
 	.vcrPanel {
 		position: absolute;
-		top:65px;
-		left:382px;
+		top:45px;
+		left:402px;
 		width:846px;
 		height:52px;
 	}
@@ -99,8 +99,8 @@
 
 	.btnZone {
 		position: absolute;
-		left:382px;
-		top:595px;
+		left:402px;
+		top:575px;
 		width:837px;
 		height:36px;
 	
@@ -109,7 +109,7 @@
 			left:auto;
 			top:auto;
 			right:60px;
-			bottom:10px;
+			bottom:30px;
 		}
 	}
 
@@ -133,8 +133,8 @@
 
 	.rightPanel.prod_pic {
 		position: absolute;
-		top:94px;
-		right:55px;
+		top:74px;
+		right:35px;
 		width:405px;
 		height:364px;
 		overflow: hidden;
@@ -152,7 +152,7 @@
 	.prodSelect {
 		position:absolute;
 		z-index:1;
-		bottom:80px;
+		bottom:100px;
 		left:60px;
 	}
 	

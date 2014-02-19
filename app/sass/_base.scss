@@ -1,4 +1,5 @@
 @include at-breakpoint($desktop) {
+	a, input[type="text"] { outline: none; }
 	.optionGroup {
 		position: relative;
 		width:820px;
@@ -35,7 +36,7 @@
 
 		//select
 		&.selectCurrent {
-			background: #cccccc;
+			background: #ffec1a;
 			a.downBtn {
 				background: url(#{$path}/downBtn_bg_hover.gif) center no-repeat;
 			}
@@ -78,17 +79,104 @@
 			}
 		}
 
-		a {
+		.InputNums {
 			position: relative;
-			display: inline-block;
-			width:100px;
+			@include pie-clearfix;
+
+			&.errorCode > input[type='text'] { 
+				position:relative;
+				z-index: 1;
+				border:5px solid #c40000; 
+			 	
+			 //&+input[type="text"] { border-left:5px solid #c40000; }
+			}
+
+		}
+		.InputNums > input[type='text'] {
+			float:left;
+			margin-left: -5px;
+			width:80px;
+			height:100px;
+			border:5px solid #000000;
+			background: #ffffff;
 			text-align: center;
-			margin:20px 0;
+			font-size:$font-s+3#{rem};
+			&:first-child {
+				margin-left:0;
+			}
+
+			&:focus {
+				background: #ffec1a;
+			}
+		}
+
+		.popBtns {
+			position: relative;
+			margin-top: 30px;
+		}
+		
+		.popBtns > ul > li {
+			display: inline-block;
+			float:left;
+			margin-left:20px;
+			&:first-child { margin-left: 0; }
+			& > a {
+				position: relative;
+				display: inline-block;
+				height:36px;
+				line-height: 36px;
+				color:#ffffff;
+				letter-spacing: 1px;
+				text-decoration: none;
+				text-shadow:3px 3px rgba(0,0,0,.5);
+				font-size:1.5rem;
+				padding-left:40px;
+
+				&:before {
+					position: absolute;
+					left:0;
+					top:0;
+					display: block;
+					content:"";
+					height:36px;
+				}
+
+				&.ok {
+					&:before {
+						width:36px;
+						background: url(#{$path}/icons/icon_okBtn.png) no-repeat;
+					}			
+				}
+
+				&.back {
+					&:before {
+						width:36px;
+						background: url(#{$path}/icons/icon_backBtn.png) no-repeat;
+					}			
+				}
+
+			}
+
+		}
+	}
+
+	.popup.adultPop {
+		p { 
+			margin-top:60px;
+			font-size: $font-s#{rem};
+			span { font-size: $font-s+2#{rem}; }
+		}
+		
+		.InputNums.adultCode {
+			width:360px;
 			left:50%;
-			margin-left:-50px;
-			color:#ffffff;
-			font-size: $font-s+2#{rem};
-			text-decoration: none;
+			margin-left:-172.5px;
+		}
+
+		.popBtns {
+			width:245px;
+			left:50%;
+			margin-left: -122.5px;
 		}
 	}
 }
