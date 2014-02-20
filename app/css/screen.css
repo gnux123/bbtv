@@ -377,7 +377,8 @@ summary {
   /* line 2, ../sass/_base.scss */
 
   a,
-  input[type="text"] {
+  input[type="text"],
+  div {
     outline: none;
   }
 
@@ -465,10 +466,12 @@ summary {
     margin-top: -250px;
     width: 76%;
     height: 500px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   }
 
-  /* line 69, ../sass/_base.scss */
+  /* line 71, ../sass/_base.scss */
 
   .popup > p {
     width: 100%;
@@ -479,13 +482,13 @@ summary {
     line-height: 5rem;
   }
 
-  /* line 76, ../sass/_base.scss */
+  /* line 78, ../sass/_base.scss */
 
   .popup > p .servicePhone {
     font-size: 5.2rem;
   }
 
-  /* line 82, ../sass/_base.scss */
+  /* line 84, ../sass/_base.scss */
 
   .popup .InputNums {
     position: relative;
@@ -499,16 +502,18 @@ summary {
     clear: both;
   }
 
-  /* line 86, ../sass/_base.scss */
+  /* line 88, ../sass/_base.scss */
 
+  .popup .InputNums.errorCode > input[type='password'],
   .popup .InputNums.errorCode > input[type='text'] {
     position: relative;
     z-index: 1;
     border: 5px solid #c40000;
   }
 
-  /* line 95, ../sass/_base.scss */
+  /* line 97, ../sass/_base.scss */
 
+  .popup .InputNums > input[type='password'],
   .popup .InputNums > input[type='text'] {
     float: left;
     margin-left: -5px;
@@ -520,26 +525,28 @@ summary {
     font-size: 5.2rem;
   }
 
-  /* line 104, ../sass/_base.scss */
+  /* line 106, ../sass/_base.scss */
 
+  .popup .InputNums > input[type='password']:first-child,
   .popup .InputNums > input[type='text']:first-child {
     margin-left: 0;
   }
 
-  /* line 108, ../sass/_base.scss */
+  /* line 110, ../sass/_base.scss */
 
+  .popup .InputNums > input[type='password']:focus,
   .popup .InputNums > input[type='text']:focus {
     background: #ffec1a;
   }
 
-  /* line 113, ../sass/_base.scss */
+  /* line 115, ../sass/_base.scss */
 
   .popup .popBtns {
     position: relative;
     margin-top: 30px;
   }
 
-  /* line 118, ../sass/_base.scss */
+  /* line 120, ../sass/_base.scss */
 
   .popup .popBtns > ul > li {
     display: inline-block;
@@ -547,13 +554,13 @@ summary {
     margin-left: 20px;
   }
 
-  /* line 122, ../sass/_base.scss */
+  /* line 124, ../sass/_base.scss */
 
   .popup .popBtns > ul > li:first-child {
     margin-left: 0;
   }
 
-  /* line 123, ../sass/_base.scss */
+  /* line 125, ../sass/_base.scss */
 
   .popup .popBtns > ul > li > a {
     position: relative;
@@ -568,7 +575,13 @@ summary {
     padding-left: 40px;
   }
 
-  /* line 135, ../sass/_base.scss */
+  /* line 136, ../sass/_base.scss */
+
+  .popup .popBtns > ul > li > a:focus {
+    color: #ffec1a;
+  }
+
+  /* line 138, ../sass/_base.scss */
 
   .popup .popBtns > ul > li > a:before {
     position: absolute;
@@ -576,37 +589,36 @@ summary {
     top: 0;
     display: block;
     content: "";
+    width: 36px;
     height: 36px;
   }
 
-  /* line 145, ../sass/_base.scss */
+  /* line 149, ../sass/_base.scss */
 
   .popup .popBtns > ul > li > a.ok:before {
-    width: 36px;
     background: url(./../images/icons/icon_okBtn.png) no-repeat;
   }
 
-  /* line 152, ../sass/_base.scss */
+  /* line 155, ../sass/_base.scss */
 
   .popup .popBtns > ul > li > a.back:before {
-    width: 36px;
     background: url(./../images/icons/icon_backBtn.png) no-repeat;
   }
 
-  /* line 164, ../sass/_base.scss */
+  /* line 166, ../sass/_base.scss */
 
   .popup.adultPop p {
     margin-top: 60px;
     font-size: 2.2rem;
   }
 
-  /* line 167, ../sass/_base.scss */
+  /* line 169, ../sass/_base.scss */
 
   .popup.adultPop p span {
     font-size: 4.2rem;
   }
 
-  /* line 170, ../sass/_base.scss */
+  /* line 172, ../sass/_base.scss */
 
   .popup.adultPop .InputNums.adultCode {
     width: 360px;
@@ -614,12 +626,118 @@ summary {
     margin-left: -172.5px;
   }
 
-  /* line 176, ../sass/_base.scss */
+  /* line 178, ../sass/_base.scss */
 
   .popup.adultPop .popBtns {
     width: 245px;
     left: 50%;
     margin-left: -122.5px;
+  }
+
+  /* line 185, ../sass/_base.scss */
+
+  .popup.copyrightPop {
+    margin-top: -275px;
+    height: 550px;
+  }
+
+  /* line 188, ../sass/_base.scss */
+
+  .popup.copyrightPop .popContent {
+    position: relative;
+    width: 90%;
+    height: 130px;
+    margin: 0 5%;
+    margin-top: 60px;
+    border: 5px solid #000000;
+    background: #ffffff;
+    padding: 10px;
+    font-size: 1.7rem;
+    overflow-y: auto;
+    line-height: 40px;
+  }
+
+  /* line 14, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
+
+  .popup.copyrightPop .popContent * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 201, ../sass/_base.scss */
+
+  .popup.copyrightPop .popContent:focus {
+    border: 5px solid #ffec1a;
+  }
+
+  /* line 226, ../sass/_base.scss */
+
+  .popup.copyrightPop .popContent:first-child {
+    margin-top: 20px;
+  }
+
+  /* line 228, ../sass/_base.scss */
+
+  .popup.copyrightPop .popContent h3 {
+    display: block;
+    color: #c40000;
+  }
+
+  /* line 234, ../sass/_base.scss */
+
+  .popup.copyrightPop .phoneInputs {
+    position: relative;
+    width: 90%;
+    height: 60px;
+    margin: 20px 5%;
+  }
+
+  /* line 241, ../sass/_base.scss */
+
+  .popup.copyrightPop .popBtns {
+    width: 245px;
+    left: 50%;
+    margin-left: -122.5px;
+    margin-top: 10px;
+  }
+
+  /* line 247, ../sass/_base.scss */
+
+  .popup.copyrightPop .popBtns:nth-child(n+1) {
+    width: 600px;
+  }
+
+  /* line 38, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+
+  .phoneInputs:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 254, ../sass/_base.scss */
+
+  .phoneInputs span {
+    float: left;
+    display: inline-block;
+    font-size: 1.9rem;
+    line-height: 60px;
+    color: #ffffff;
+  }
+
+  /* line 261, ../sass/_base.scss */
+
+  .phoneInputs > .InputNums {
+    float: left;
+    margin-left: 6.5px;
+  }
+
+  /* line 262, ../sass/_base.scss */
+
+  .phoneInputs > .InputNums > input[type='text'] {
+    width: 50px;
+    height: 60px;
+    font-size: 2.7rem;
   }
 }
 

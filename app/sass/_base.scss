@@ -1,5 +1,5 @@
 @include at-breakpoint($desktop) {
-	a, input[type="text"] { outline: none; }
+	a, input[type="text"], div { outline: none; }
 	.optionGroup {
 		position: relative;
 		width:820px;
@@ -65,7 +65,9 @@
 		margin-top:-250px;
 		width:76%;
 		height:500px;
-		background: rgba(0,0,0,.7);
+		background: rgba(0,0,0,.8);
+		border-radius: 30px;
+		box-shadow: 0 0 30px rgba(0,0,0,.5);
 		& > p {
 			width:100%;
 			margin-top:100px;
@@ -83,7 +85,7 @@
 			position: relative;
 			@include pie-clearfix;
 
-			&.errorCode > input[type='text'] { 
+			&.errorCode > input[type='password'], &.errorCode > input[type='text'] { 
 				position:relative;
 				z-index: 1;
 				border:5px solid #c40000; 
@@ -92,7 +94,7 @@
 			}
 
 		}
-		.InputNums > input[type='text'] {
+		.InputNums > input[type='password'], .InputNums > input[type='text'] {
 			float:left;
 			margin-left: -5px;
 			width:80px;
@@ -131,6 +133,7 @@
 				text-shadow:3px 3px rgba(0,0,0,.5);
 				font-size:1.5rem;
 				padding-left:40px;
+				&:focus { color:#ffec1a; }
 
 				&:before {
 					position: absolute;
@@ -138,19 +141,18 @@
 					top:0;
 					display: block;
 					content:"";
+					width:36px;
 					height:36px;
 				}
 
 				&.ok {
 					&:before {
-						width:36px;
 						background: url(#{$path}/icons/icon_okBtn.png) no-repeat;
 					}			
 				}
 
 				&.back {
 					&:before {
-						width:36px;
 						background: url(#{$path}/icons/icon_backBtn.png) no-repeat;
 					}			
 				}
@@ -178,5 +180,88 @@
 			left:50%;
 			margin-left: -122.5px;
 		}
+	}
+
+	.popup.copyrightPop {
+		margin-top:-275px;
+		height:550px;
+		.popContent {
+			position: relative;
+			width:90%;
+			height:130px;
+			margin:0 5%;
+			margin-top:60px;
+			@include border-box-sizing;
+			border:5px solid #000000;
+			background: #ffffff;
+			padding: 10px;
+			font-size:$font-s - 0.5#{rem};
+			overflow-y:auto;
+			line-height: 40px;
+			&:focus {
+				border:5px solid #ffec1a;
+
+				// &:before, &:after {
+				// 	z-index: 3;
+				// 	display: block;
+				// 	content: "";
+				// 	position: absolute;
+				// 	left:50%;
+				// 	margin-left: -18px;
+				// 	width:36px;
+				// 	height:36px;
+				// 	overflow: hidden;
+				// }
+
+				// &:before {
+				// 	top:-25px;
+				// 	background: url(#{$path}/icons/icon_upBtn.png) no-repeat; 
+				// }
+
+				// &:after {
+				// 	bottom:-40px;
+				// 	background: url(#{$path}/icons/icon_downBtn.png) no-repeat; 
+				// }
+			}
+			&:first-child { margin-top: 20px; }
+		
+			h3 { 
+				display: block;
+				color:#c40000;
+			}
+		}
+
+		.phoneInputs {
+			position: relative;
+			width:90%;
+			height:60px;
+			margin:20px 5%;
+		}
+
+		.popBtns { 
+			width:245px;
+			left:50%;
+			margin-left: -122.5px;			
+			margin-top: 10px;
+			
+			&:nth-child(n+1){
+				width:600px;
+			}
+		}
+	}
+
+	.phoneInputs { @include pie-clearfix; }
+	.phoneInputs span { 
+		float: left;
+		display: inline-block;
+		font-size:$font-s - 0.3#{rem};
+		line-height: 60px;
+		color:#ffffff;
+	}
+	.phoneInputs > .InputNums { float:left; margin-left:6.5px; }
+	.phoneInputs > .InputNums > input[type='text'] {
+		width:50px;
+		height:60px;
+		font-size:$font-s+0.5#{rem};
 	}
 }
