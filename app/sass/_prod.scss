@@ -56,16 +56,6 @@
 	}
 
 	//end
-	.prodOrderEnd {
-		position:absolute;
-		z-index:1;
-		bottom:100px;
-		left:80px;
-		width:1122px;
-		height:164px;
-		background: url(#{$path}/orderTips_bg.png) no-repeat;		
-	}
-
 	.prodOrderEnd > p {
 		position: relative;
 		top:20px;
@@ -91,7 +81,7 @@
 	a.orderCheck_btn {
 		position:absolute;
 		right:75px;
-		bottom:100px;
+		bottom:130px;
 		width:306px;
 		height:0px;
 		padding-top:159px;

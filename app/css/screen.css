@@ -193,7 +193,7 @@ summary {
   .logo {
     position: absolute;
     left: 0;
-    top: -20px;
+    top: -35px;
     width: 384px;
     height: 107px;
     background: url(./../images/logo.png) center no-repeat;
@@ -214,7 +214,7 @@ summary {
 
   .leftPanel {
     position: absolute;
-    top: 97px;
+    top: 80px;
     left: 20px;
     width: 372px;
     height: 549px;
@@ -225,20 +225,21 @@ summary {
   /* line 39, ../sass/_layout.scss */
 
   .leftPanel.prod_detail {
+    top: 70px;
     width: 817px;
     height: 349px;
     background: url(./../images/prod_left_bg.png) no-repeat;
   }
 
-  /* line 46, ../sass/_layout.scss */
+  /* line 47, ../sass/_layout.scss */
 
   .leftPanel_navs {
     position: absolute;
-    top: 650px;
+    top: 635px;
     left: 150px;
   }
 
-  /* line 52, ../sass/_layout.scss */
+  /* line 53, ../sass/_layout.scss */
 
   .prodContent {
     position: relative;
@@ -248,7 +249,7 @@ summary {
     overflow: hidden;
   }
 
-  /* line 60, ../sass/_layout.scss */
+  /* line 61, ../sass/_layout.scss */
 
   #pageSlide {
     position: absolute;
@@ -256,18 +257,21 @@ summary {
     height: 10000em;
   }
 
-  /* line 66, ../sass/_layout.scss */
+  /* line 67, ../sass/_layout.scss */
 
   .rightVcr {
     position: absolute;
     top: 97px;
     left: 402px;
-    width: 837px;
-    height: 478px;
-    background: url(./../images/right_bg.png) no-repeat;
+    width: 825px;
+    height: 460px;
+    border-bottom-left-radius: 56px;
+    overflow: hidden;
+    background: url(./../images/right_bg.png) white no-repeat;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
   }
 
-  /* line 75, ../sass/_layout.scss */
+  /* line 79, ../sass/_layout.scss */
 
   .vcrPanel {
     position: absolute;
@@ -277,7 +281,7 @@ summary {
     height: 52px;
   }
 
-  /* line 83, ../sass/_layout.scss */
+  /* line 87, ../sass/_layout.scss */
 
   .vcrContent,
   .vcrContent > div {
@@ -285,7 +289,7 @@ summary {
     height: 435px;
   }
 
-  /* line 88, ../sass/_layout.scss */
+  /* line 92, ../sass/_layout.scss */
 
   .vcrContent {
     position: relative;
@@ -293,7 +297,7 @@ summary {
     overflow: hidden;
   }
 
-  /* line 93, ../sass/_layout.scss */
+  /* line 97, ../sass/_layout.scss */
 
   .vcrContent > div {
     position: absolute;
@@ -302,7 +306,7 @@ summary {
     background: #cccccc;
   }
 
-  /* line 100, ../sass/_layout.scss */
+  /* line 104, ../sass/_layout.scss */
 
   .btnZone {
     position: absolute;
@@ -312,24 +316,24 @@ summary {
     height: 36px;
   }
 
-  /* line 107, ../sass/_layout.scss */
+  /* line 111, ../sass/_layout.scss */
 
   .btnZone.prod_pos {
     z-index: 1;
     left: auto;
     top: auto;
     right: 60px;
-    bottom: 30px;
+    bottom: 75px;
   }
 
-  /* line 116, ../sass/_layout.scss */
+  /* line 120, ../sass/_layout.scss */
 
   .btnZone > .phone {
     position: relative;
     right: -70px;
   }
 
-  /* line 123, ../sass/_layout.scss */
+  /* line 127, ../sass/_layout.scss */
 
   .prod_bg_down {
     position: absolute;
@@ -341,11 +345,11 @@ summary {
     background: url(./../images/bg_shadow.png) no-repeat;
   }
 
-  /* line 134, ../sass/_layout.scss */
+  /* line 138, ../sass/_layout.scss */
 
   .rightPanel.prod_pic {
     position: absolute;
-    top: 74px;
+    top: 50px;
     right: 35px;
     width: 405px;
     height: 364px;
@@ -353,7 +357,7 @@ summary {
     background: url(./../images/right_prod_pic.png) no-repeat;
   }
 
-  /* line 143, ../sass/_layout.scss */
+  /* line 147, ../sass/_layout.scss */
 
   .rightPanel.prod_pic > img {
     position: relative;
@@ -363,13 +367,25 @@ summary {
     left: 11px;
   }
 
-  /* line 152, ../sass/_layout.scss */
+  /* line 156, ../sass/_layout.scss */
 
   .prodSelect {
     position: absolute;
     z-index: 1;
-    bottom: 100px;
+    bottom: 130px;
     left: 60px;
+  }
+
+  /* line 164, ../sass/_layout.scss */
+
+  .prodOrderEnd {
+    position: absolute;
+    z-index: 1;
+    bottom: 130px;
+    left: 80px;
+    width: 1122px;
+    height: 164px;
+    background: url(./../images/orderTips_bg.png) no-repeat;
   }
 }
 
@@ -377,7 +393,7 @@ summary {
   /* line 2, ../sass/_base.scss */
 
   a,
-  input[type="text"],
+  input,
   div {
     outline: none;
   }
@@ -670,20 +686,48 @@ summary {
     border: 5px solid #ffec1a;
   }
 
-  /* line 226, ../sass/_base.scss */
+  /* line 204, ../sass/_base.scss */
+
+  .popup.copyrightPop .popContent:focus:before,
+  .popup.copyrightPop .popContent:focus:after {
+    z-index: 3;
+    display: block;
+    content: "";
+    position: fixed;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -25px;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+  }
+
+  /* line 217, ../sass/_base.scss */
+
+  .popup.copyrightPop .popContent:focus:before {
+    background: url(./../images/icons/icon_upBtn.png) no-repeat;
+  }
+
+  /* line 222, ../sass/_base.scss */
+
+  .popup.copyrightPop .popContent:focus:after {
+    background: url(./../images/icons/icon_downBtn.png) no-repeat;
+  }
+
+  /* line 227, ../sass/_base.scss */
 
   .popup.copyrightPop .popContent:first-child {
     margin-top: 20px;
   }
 
-  /* line 228, ../sass/_base.scss */
+  /* line 229, ../sass/_base.scss */
 
   .popup.copyrightPop .popContent h3 {
     display: block;
     color: #c40000;
   }
 
-  /* line 234, ../sass/_base.scss */
+  /* line 235, ../sass/_base.scss */
 
   .popup.copyrightPop .phoneInputs {
     position: relative;
@@ -692,7 +736,7 @@ summary {
     margin: 20px 5%;
   }
 
-  /* line 241, ../sass/_base.scss */
+  /* line 242, ../sass/_base.scss */
 
   .popup.copyrightPop .popBtns {
     width: 245px;
@@ -701,7 +745,7 @@ summary {
     margin-top: 10px;
   }
 
-  /* line 247, ../sass/_base.scss */
+  /* line 248, ../sass/_base.scss */
 
   .popup.copyrightPop .popBtns:nth-child(n+1) {
     width: 600px;
@@ -715,7 +759,7 @@ summary {
     clear: both;
   }
 
-  /* line 254, ../sass/_base.scss */
+  /* line 255, ../sass/_base.scss */
 
   .phoneInputs span {
     float: left;
@@ -725,19 +769,70 @@ summary {
     color: #ffffff;
   }
 
-  /* line 261, ../sass/_base.scss */
+  /* line 262, ../sass/_base.scss */
 
   .phoneInputs > .InputNums {
     float: left;
     margin-left: 6.5px;
   }
 
-  /* line 262, ../sass/_base.scss */
+  /* line 263, ../sass/_base.scss */
 
   .phoneInputs > .InputNums > input[type='text'] {
     width: 50px;
     height: 60px;
     font-size: 2.7rem;
+  }
+
+  /* line 271, ../sass/_base.scss */
+
+  .servicePop .popContent {
+    position: relative;
+    width: 90%;
+    height: 130px;
+    margin: 0 5%;
+    margin-top: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 4.2rem;
+    line-height: 6.2rem;
+  }
+
+  /* line 283, ../sass/_base.scss */
+
+  .servicePop .phone,
+  .servicePop .title {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  /* line 290, ../sass/_base.scss */
+
+  .servicePop .phone:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 90px;
+    background: url(./../images/icon_phone.png) center no-repeat;
+  }
+
+  /* line 301, ../sass/_base.scss */
+
+  .servicePop .title {
+    font-size: 6.2rem;
+  }
+
+  /* line 305, ../sass/_base.scss */
+
+  .servicePop .popBtns {
+    width: 245px;
+    left: 50%;
+    margin-left: -122.5px;
+    margin-top: 180px;
   }
 }
 
@@ -815,18 +910,6 @@ summary {
 
   /* line 59, ../sass/_prod.scss */
 
-  .prodOrderEnd {
-    position: absolute;
-    z-index: 1;
-    bottom: 100px;
-    left: 80px;
-    width: 1122px;
-    height: 164px;
-    background: url(./../images/orderTips_bg.png) no-repeat;
-  }
-
-  /* line 69, ../sass/_prod.scss */
-
   .prodOrderEnd > p {
     position: relative;
     top: 20px;
@@ -837,14 +920,14 @@ summary {
     line-height: 60px;
   }
 
-  /* line 78, ../sass/_prod.scss */
+  /* line 68, ../sass/_prod.scss */
 
   .prodOrderEnd > p > span {
     color: #550000;
     font-size: 3.2rem;
   }
 
-  /* line 84, ../sass/_prod.scss */
+  /* line 74, ../sass/_prod.scss */
 
   .prodOrderEnd > span.tips {
     position: absolute;
@@ -853,12 +936,12 @@ summary {
     font-size: 1.6rem;
   }
 
-  /* line 91, ../sass/_prod.scss */
+  /* line 81, ../sass/_prod.scss */
 
   a.orderCheck_btn {
     position: absolute;
     right: 75px;
-    bottom: 100px;
+    bottom: 130px;
     width: 306px;
     height: 0px;
     padding-top: 159px;
@@ -866,7 +949,7 @@ summary {
     background: url(./../images/orderCheck_btn.png) no-repeat;
   }
 
-  /* line 102, ../sass/_prod.scss */
+  /* line 92, ../sass/_prod.scss */
 
   .spec1,
   .spec2,
@@ -875,26 +958,26 @@ summary {
     margin-top: 25px;
   }
 
-  /* line 106, ../sass/_prod.scss */
+  /* line 96, ../sass/_prod.scss */
 
   .spec1 {
     width: 274px;
     border-right: 0;
   }
 
-  /* line 109, ../sass/_prod.scss */
+  /* line 99, ../sass/_prod.scss */
 
   .spec1 span.text {
     width: 208px;
   }
 
-  /* line 111, ../sass/_prod.scss */
+  /* line 101, ../sass/_prod.scss */
 
   .spec2 {
     border-right: 0;
   }
 
-  /* line 112, ../sass/_prod.scss */
+  /* line 102, ../sass/_prod.scss */
 
   .spec2,
   .spec3 {
@@ -903,7 +986,7 @@ summary {
     width: 273px;
   }
 
-  /* line 116, ../sass/_prod.scss */
+  /* line 106, ../sass/_prod.scss */
 
   .spec2 span.text,
   .spec3 span.text {

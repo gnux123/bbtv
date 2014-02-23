@@ -12,7 +12,7 @@
 	.logo {
 		position: absolute;
 		left:0;
-		top:-20px;
+		top:-35px;
 		width:384px;
 		height:107px;
 		background: url(#{$path}/logo.png) center no-repeat;
@@ -29,7 +29,7 @@
 
 	.leftPanel {
 		position: absolute;
-		top:97px;
+		top:80px;
 		left:20px;
 		width:372px;
 		height: 549px;
@@ -37,6 +37,7 @@
 		overflow: hidden;
 		
 		&.prod_detail {
+			top:70px;
 			width:817px;
 			height: 349px;			
 			background: url(#{$path}/prod_left_bg.png) no-repeat;
@@ -45,7 +46,7 @@
 
 	.leftPanel_navs {
 		position: absolute;
-		top:650px;
+		top:635px;
 		left:150px;
 	}
 
@@ -67,9 +68,12 @@
 		position: absolute;
 		top:97px;
 		left:402px;
-		width:837px;
-		height:478px;
-		background: url(#{$path}/right_bg.png) no-repeat;
+		width:825px;
+		height:460px;
+		border-bottom-left-radius: 56px;
+		overflow: hidden;
+		background: url(#{$path}/right_bg.png) #ffffff no-repeat;
+		box-shadow: 6px 6px 6px rgba(0,0,0,.5);
 	}
 
 	.vcrPanel {
@@ -109,7 +113,7 @@
 			left:auto;
 			top:auto;
 			right:60px;
-			bottom:30px;
+			bottom:75px;
 		}
 	}
 
@@ -133,7 +137,7 @@
 
 	.rightPanel.prod_pic {
 		position: absolute;
-		top:74px;
+		top:50px;
 		right:35px;
 		width:405px;
 		height:364px;
@@ -152,8 +156,19 @@
 	.prodSelect {
 		position:absolute;
 		z-index:1;
-		bottom:100px;
+		bottom:130px;
 		left:60px;
+	}
+
+	//end
+	.prodOrderEnd {
+		position:absolute;
+		z-index:1;
+		bottom:130px;
+		left:80px;
+		width:1122px;
+		height:164px;
+		background: url(#{$path}/orderTips_bg.png) no-repeat;		
 	}
 	
 }

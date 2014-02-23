@@ -41,6 +41,11 @@
                     </span>
                 </div>
             </div>
+
+            <div class="rightPanel prod_pic">
+                <img src="http://img2.u-mall.com.tw/UserFiles/Product/00476/00476406/8860600a-2c05-4809-84f2-28c0f25eef06.jpg" alt="">
+            </div>
+
             <div class="prodSelect">
                 <select name="" id="" class="address">
                     <option value="">新北市中和區景平路258號5樓</option>
@@ -67,9 +72,7 @@
                 </select>
             </div>
             <a class="orderCheck_btn" href="javascript:void(0);" tabIndex="4">確認送出</a>
-            <div class="rightPanel prod_pic">
-                <img src="http://img2.u-mall.com.tw/UserFiles/Product/00476/00476406/8860600a-2c05-4809-84f2-28c0f25eef06.jpg" alt="">
-            </div>
+
             <div class="popup copyrightPop">
                 <div class="popContent pop_f" tabIndex="11">
                     <h3>【中嘉個資權益公告】</h3>
@@ -108,6 +111,20 @@
                     <ul>
                         <li><a class="back" href="javascript:void(0);">回上頁</a></li>
                         <li><a class="ok" href="javascript:void(0);">知悉並同意個資權益及行銷資訊宣告</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="popup servicePop">
+                <div class="popContent">
+                    <span clas="title">請洽專人訂購</span>
+                    <span class="phone">0800-070-799</span>
+                    商品編號：66513094
+                </div>
+                <div class="popBtns">
+                    <ul>
+                        <li><a class="back" href="javascript:void(0);">回上頁</a></li>
+                        <li><a class="ok" href="javascript:void(0);">確認</a></li>
                     </ul>
                 </div>
             </div>
@@ -167,7 +184,7 @@
 
                 $(".popup").hide();
                 $(".orderCheck_btn").click(function(){
-                    $(".popup").show();
+                    $(".copyrightPop").show();
                 });
 
             });
