@@ -2,6 +2,8 @@
   "name": "bbtv",
   "private": true,
   "dependencies": {
+    "modernizr": "~2.6.2",
     "jquery": "1.7.2"
-  }
+  },
+  "devDependencies": {}
 }
